@@ -1,7 +1,9 @@
 .DS_Store
 Hardware/.DS_Store
 Images/.DS_Store
+Software/.gitignore
 Software/.DS_Store
+Software/.vscode
 Software/data/.DS_Store
 Software/data/wifi.conf
 Software/-Teagle.flash.4m1m.ld
