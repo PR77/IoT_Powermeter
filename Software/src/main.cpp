@@ -44,9 +44,6 @@ IPAddress apNetmask(255,255,255,0);
 //=============================================================================
 // Application specific defines and globals
 //=============================================================================
-const uint32_t blankUXAfterBootUp = 10L * (1000L);  // 10 seconds
-const uint32_t blankUXAfterMessage = 10L;           // 10 seconds
-
 static uint32_t lastDhtUpdateTime = 0;
 static uint32_t lastLogUpdateTime = 0;
 static uint32_t lastLogUpdateUiTime = 0;
@@ -64,7 +61,7 @@ const uint32_t utcOffsetInSeconds = 3600;
 //=============================================================================
 #define BUILD_TIME                  ("__DATE__, __TIME__ ")
 
-#define ACCESSORY_NAME              ("IoTPowerMeter")
+#define ACCESSORY_NAME              ("PowerMeter")
 #define ACCESSORY_SETUP_NAME        ("PowerMeterSetup")
 #define ACCESSORY_SN                ("SN_0001")
 #define ACCESSORY_MODEL             ("ESP8266")

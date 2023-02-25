@@ -4,7 +4,6 @@
 <head>
     <title>ESP8266 Power Meter</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#00878f">
@@ -16,19 +15,11 @@
     <center>
         <h1>ESP8266 Power Meter</h1>
 		<div id="chart_div"></div>
-		<div id="loading">Loading ...</div>
-        <div id="dateselect" style="visibility: hidden;">
-            <div id="date"></div>
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button><br>
-            <button id="zoomout">-</button>
-            <button id="zoomin">+</button><br>
-            <button id="reset" style="width: 4.4em;">Reset</button><br>
-            <button id="refresh" style="width: 4.4em;">Refresh</button>
-        </div>
+		<div id="loading" stlye="visibility: visible;">Loading ...</div>
+		<div id="elements" style="visibility: visible;">Element Count Loading ...</div>
     </center>
 
-    <script src="powerGraph.js"></script>
+	<script src="powerGraph.js"></script>
 
     <style>
 	body {
@@ -42,19 +33,6 @@
 	    font-size: 1.5em;
 	    font-weight: normal;
 	    margin: 0px 0px 12px 0px;
-	}
-
-	button {
-	    font-size: 14pt;
-	    width: 2em;
-	}
-
-	center {
-	    padding: 1em;
-	    margin: auto;
-	    width: 90%;
-	    box-shadow: #777 2px 2px 5px;
-	    box-sizing: border-box;
 	}
 
 	#loading {
