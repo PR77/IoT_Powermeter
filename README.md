@@ -45,9 +45,8 @@ All of the interfacing with the hardware features is via HTTP Server GET and POS
 |/info        |GET |none      |Get SPIFFS and CPU MHz info           |
 |/temperature |GET |none      |Read environmental sensor data (DHT11)|
 |/humidity    |GET |none      |Read environmental sensor data (DHT11)|
-|/ledwatts    |GET |none      |Instandenous watts                    |
+|/watts       |GET |none      |Instandenous watts                    |
 |/beeper      |POST|count     |Beep piezo beeper                     |
-
 
 ## Open Sources Used
 PlatformIO is the main development environment. In addition to the Arduino framework for ESP8266, I used the following (either important as libraries into PIO or seperate);
